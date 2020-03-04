@@ -10,7 +10,7 @@ Out of scope for this project
 
 ## Datasets to Be Used
 1. Kaggle - for conference data: https://www.kaggle.com/andrewsundberg/college-basketball-dataset
-2. Kaggle - seeds, results from 2015-2019: https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv
+2. Data World - seeds, results from 2015-2019: https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv
 
 ## Rough Breakdown of Tasks
 Jupyter, postgres or sqllite, pandas, possibly sqlalchemy
