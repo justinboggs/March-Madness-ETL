@@ -9,8 +9,8 @@ Using data from the last five years of NCAA Basketball Tournament results, we wi
 Out of scope for this project 
 
 ## Datasets to Be Used
-Kaggle - for conference data: https://www.kaggle.com/andrewsundberg/college-basketball-dataset
-Kaggle - seeds, results from 2015-2019: https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv
+1. Kaggle - for conference data: https://www.kaggle.com/andrewsundberg/college-basketball-dataset
+2. Kaggle - seeds, results from 2015-2019: https://data.world/michaelaroy/ncaa-tournament-results/workspace/file?filename=Big_Dance_CSV.csv
 
 ## Rough Breakdown of Tasks
 Jupyter, postgres or sqllite, pandas, possibly sqlalchemy
