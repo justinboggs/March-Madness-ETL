@@ -1,0 +1,25 @@
+variable_key,definition
+2P_D, Two-Point Shooting Percentage Allowed
+2P_O, Two-Point Shooting Percentage
+3P_D, Three-Point Shooting Percentage Allowed
+3P_O, Three-Point Shooting Percentage
+ADJ_T, Adjusted Tempo
+ADJDE, Adjusted Defensive Efficiency
+ADJOE, Adjusted Offensive Efficiency
+BARTHAG, Power Rating (Chance of beating an average Division I team)
+CONF, The Athletic Conference in which the school participates in
+DRB, Defensive Rebound Percentage
+EFG_D, Effective Field Goal Percentage Allowed
+EFG_O, Effective Field Goal Percentage Shot
+FTR , Free Throw Rate (How often the given team shoots Free Throws)
+FTRD, Free Throw Rate Allowed
+G, Number of games played
+ORB, Offensive Rebound Percentage
+POSTSEASON, Round where the given team was eliminated or where their season ended
+SEED, Seed in the NCAA March Madness Tournament
+TEAM, The Division I college basketball school
+TOR, Turnover Percentage Allowed (Turnover Rate)
+TORD, Turnover Percentage Committed (Steal Rate)
+W, Number of games won
+WAB, Wins Above Bubble
+YEAR, Season
