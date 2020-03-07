@@ -10,6 +10,9 @@ FROM "Conference"
 WHERE "YEAR" >= 2015
 ORDER BY "TEAM";
 
+------------------------------------------------------------
+-- "E" - Extract two columns into a single column
+------------------------------------------------------------
 SELECT DISTINCT BD_Team 
 INTO BigDanceTeams
 FROM (
@@ -121,9 +124,12 @@ WHERE "Home_Team" IN (
 	, 'Coastal Carolina'
 )
 
--- Unneeded in final:
+-- Not needed in final dataset:
 ALTER TABLE "BigDance" DROP "Conference";
 	
+--------------------------------------------------------
+-- "L" - Load into consumable view (virtual table)
+--------------------------------------------------------	
 CREATE VIEW FinalData AS
 SELECT *
 	, (
