@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bootstrap Visualization Dashboard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">NCAA March Maddness Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Data
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="f_2015-2019_ncaa_summary_data.html">'15-'19 Summary</a>
+                        <a class="dropdown-item" href="f_2015-2019_ncaa_final_data.html">'15-'19 Detail</a>
+                        <a class="dropdown-item" href="f_2015_ncaa_final_data.html">2015 Detail</a>
+                        <a class="dropdown-item" href="f_2016_ncaa_final_data.html">2016 Detail</a>
+                        <a class="dropdown-item" href="f_2017_ncaa_final_data.html">2017 Detail</a>
+                        <a class="dropdown-item" href="f_2018_ncaa_final_data.html">2018 Detail</a>
+                        <a class="dropdown-item" href="f_2019_ncaa_final_data.html">2019 Detail</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<div class="card">
+		<div class="card-body">
+			<table class="table table-striped table-sm table-responsive">
+				<thead>
+					<tr style="text-align: right;">
+						<th></th>
+						<th>Year</th>
+						<th>Avg. Home Seed</th>
+						<th>Avg. Away Seed</th>
+						<th>Avg. Home Score</th>
+						<th>Avg. Away Score</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>0</th>
+						<td>2015</td>
+						<td>4.017544</td>
+						<td>8.947368</td>
+						<td>69.982456</td>
+						<td>63.701754</td>
+					</tr>
+					<tr>
+						<th>1</th>
+						<td>2016</td>
+						<td>4.016667</td>
+						<td>9.633333</td>
+						<td>75.716667</td>
+						<td>69.883333</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>2017</td>
+						<td>3.666667</td>
+						<td>9.283333</td>
+						<td>78.033333</td>
+						<td>70.716667</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>2018</td>
+						<td>4.612903</td>
+						<td>9.322581</td>
+						<td>72.177419</td>
+						<td>70.112903</td>
+					</tr>
+					<tr>
+						<th>4</th>
+						<td>2019</td>
+						<td>3.483871</td>
+						<td>9.435484</td>
+						<td>72.419355</td>
+						<td>67.370968</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div class="cardmx-auto container bg-dark mb-3" role="alert">
+		<div class="card-body py-3">
+			<p class="text-white">© Copyright Coding Bootcamp 2020</p>
+		</div>
+	</div>
+	<!-- Footer -->
+</body>

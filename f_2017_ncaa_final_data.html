@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Bootstrap Visualization Dashboard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">NCAA March Maddness Analysis</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Data
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="f_2015-2019_ncaa_summary_data.html">'15-'19 Summary</a>
+                        <a class="dropdown-item" href="f_2015-2019_ncaa_final_data.html">'15-'19 Detail</a>
+                        <a class="dropdown-item" href="f_2015_ncaa_final_data.html">2015 Detail</a>
+                        <a class="dropdown-item" href="f_2016_ncaa_final_data.html">2016 Detail</a>
+                        <a class="dropdown-item" href="f_2017_ncaa_final_data.html">2017 Detail</a>
+                        <a class="dropdown-item" href="f_2018_ncaa_final_data.html">2018 Detail</a>
+                        <a class="dropdown-item" href="f_2019_ncaa_final_data.html">2019 Detail</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+	<div class="card">
+		<div class="card-body">
+			<table class="table table-striped table-sm table-responsive">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Round</th>
+      <th>Region Number</th>
+      <th>Region Name</th>
+      <th>Home Team</th>
+      <th>Away Team</th>
+      <th>Home Seed</th>
+      <th>Away Seed</th>
+      <th>Home Score</th>
+      <th>Away Score</th>
+      <th>Home Conference</th>
+      <th>Away Conference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>116</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Villanova</td>
+      <td>Mount St Marys</td>
+      <td>1</td>
+      <td>16</td>
+      <td>76</td>
+      <td>56</td>
+      <td>BE</td>
+      <td>NEC</td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Duke</td>
+      <td>Troy</td>
+      <td>2</td>
+      <td>15</td>
+      <td>87</td>
+      <td>65</td>
+      <td>ACC</td>
+      <td>SB</td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Baylor</td>
+      <td>New Mexico St</td>
+      <td>3</td>
+      <td>14</td>
+      <td>91</td>
+      <td>73</td>
+      <td>B12</td>
+      <td>WAC</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Florida</td>
+      <td>East Tennessee St</td>
+      <td>4</td>
+      <td>13</td>
+      <td>80</td>
+      <td>65</td>
+      <td>SEC</td>
+      <td>SC</td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Virginia</td>
+      <td>UNC Wilmington</td>
+      <td>5</td>
+      <td>12</td>
+      <td>76</td>
+      <td>71</td>
+      <td>ACC</td>
+      <td>CAA</td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>1</td>
+      <td>East</td>
+      <td>SMU</td>
+      <td>USC</td>
+      <td>6</td>
+      <td>11</td>
+      <td>65</td>
+      <td>66</td>
+      <td>Amer</td>
+      <td>P12</td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>1</td>
+      <td>East</td>
+      <td>South Carolina</td>
+      <td>Marquette</td>
+      <td>7</td>
+      <td>10</td>
+      <td>93</td>
+      <td>73</td>
+      <td>SEC</td>
+      <td>BE</td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Wisconsin</td>
+      <td>Virginia Tech</td>
+      <td>8</td>
+      <td>9</td>
+      <td>84</td>
+      <td>74</td>
+      <td>B10</td>
+      <td>ACC</td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Kansas</td>
+      <td>UC Davis</td>
+      <td>1</td>
+      <td>16</td>
+      <td>100</td>
+      <td>62</td>
+      <td>B12</td>
+      <td>BW</td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Louisville</td>
+      <td>Jacksonville St</td>
+      <td>2</td>
+      <td>15</td>
+      <td>78</td>
+      <td>63</td>
+      <td>ACC</td>
+      <td>OVC</td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Oregon</td>
+      <td>Iona</td>
+      <td>3</td>
+      <td>14</td>
+      <td>93</td>
+      <td>77</td>
+      <td>P12</td>
+      <td>MAAC</td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Purdue</td>
+      <td>Vermont</td>
+      <td>4</td>
+      <td>13</td>
+      <td>80</td>
+      <td>70</td>
+      <td>B10</td>
+      <td>AE</td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Iowa St</td>
+      <td>Nevada</td>
+      <td>5</td>
+      <td>12</td>
+      <td>84</td>
+      <td>73</td>
+      <td>B12</td>
+      <td>MWC</td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Creighton</td>
+      <td>Rhode Island</td>
+      <td>6</td>
+      <td>11</td>
+      <td>72</td>
+      <td>84</td>
+      <td>BE</td>
+      <td>A10</td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Michigan</td>
+      <td>Oklahoma St</td>
+      <td>7</td>
+      <td>10</td>
+      <td>92</td>
+      <td>91</td>
+      <td>B10</td>
+      <td>B12</td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Miami</td>
+      <td>Michigan St</td>
+      <td>8</td>
+      <td>9</td>
+      <td>58</td>
+      <td>78</td>
+      <td>ACC</td>
+      <td>B10</td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>4</td>
+      <td>South</td>
+      <td>North Carolina</td>
+      <td>Texas Southern</td>
+      <td>1</td>
+      <td>16</td>
+      <td>103</td>
+      <td>64</td>
+      <td>ACC</td>
+      <td>SWAC</td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>4</td>
+      <td>South</td>
+      <td>UCLA</td>
+      <td>Kent St</td>
+      <td>3</td>
+      <td>14</td>
+      <td>97</td>
+      <td>80</td>
+      <td>P12</td>
+      <td>MAC</td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>4</td>
+      <td>South</td>
+      <td>Butler</td>
+      <td>Winthrop</td>
+      <td>4</td>
+      <td>13</td>
+      <td>76</td>
+      <td>64</td>
+      <td>BE</td>
+      <td>BSth</td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>4</td>
+      <td>South</td>
+      <td>Minnesota</td>
+      <td>Middle Tennessee St</td>
+      <td>5</td>
+      <td>12</td>
+      <td>72</td>
+      <td>81</td>
+      <td>B10</td>
+      <td>CUSA</td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>4</td>
+      <td>South</td>
+      <td>Cincinnati</td>
+      <td>Kansas St</td>
+      <td>6</td>
+      <td>11</td>
+      <td>75</td>
+      <td>61</td>
+      <td>Amer</td>
+      <td>B12</td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>4</td>
+      <td>South</td>
+      <td>Arkansas</td>
+      <td>Seton Hall</td>
+      <td>8</td>
+      <td>9</td>
+      <td>77</td>
+      <td>71</td>
+      <td>SEC</td>
+      <td>BE</td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Gonzaga</td>
+      <td>South Dakota St</td>
+      <td>1</td>
+      <td>16</td>
+      <td>66</td>
+      <td>46</td>
+      <td>WCC</td>
+      <td>Sum</td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Arizona</td>
+      <td>North Dakota</td>
+      <td>2</td>
+      <td>15</td>
+      <td>100</td>
+      <td>82</td>
+      <td>P12</td>
+      <td>BSky</td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Florida St</td>
+      <td>Florida Gulf Coast</td>
+      <td>3</td>
+      <td>14</td>
+      <td>86</td>
+      <td>80</td>
+      <td>ACC</td>
+      <td>ASun</td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>2</td>
+      <td>West</td>
+      <td>West Virginia</td>
+      <td>Bucknell</td>
+      <td>4</td>
+      <td>13</td>
+      <td>86</td>
+      <td>80</td>
+      <td>B12</td>
+      <td>Pat</td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Notre Dame</td>
+      <td>Princeton</td>
+      <td>5</td>
+      <td>12</td>
+      <td>60</td>
+      <td>58</td>
+      <td>ACC</td>
+      <td>Ivy</td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Maryland</td>
+      <td>Xavier</td>
+      <td>6</td>
+      <td>11</td>
+      <td>65</td>
+      <td>76</td>
+      <td>B10</td>
+      <td>BE</td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>2</td>
+      <td>West</td>
+      <td>St Marys</td>
+      <td>VCU</td>
+      <td>7</td>
+      <td>10</td>
+      <td>85</td>
+      <td>77</td>
+      <td>WCC</td>
+      <td>A10</td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td>2017</td>
+      <td>1</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Northwestern</td>
+      <td>Vanderbilt</td>
+      <td>8</td>
+      <td>9</td>
+      <td>68</td>
+      <td>66</td>
+      <td>B10</td>
+      <td>SEC</td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Villanova</td>
+      <td>Wisconsin</td>
+      <td>1</td>
+      <td>8</td>
+      <td>62</td>
+      <td>65</td>
+      <td>BE</td>
+      <td>B10</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Duke</td>
+      <td>South Carolina</td>
+      <td>2</td>
+      <td>7</td>
+      <td>81</td>
+      <td>88</td>
+      <td>ACC</td>
+      <td>SEC</td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Baylor</td>
+      <td>USC</td>
+      <td>3</td>
+      <td>11</td>
+      <td>82</td>
+      <td>78</td>
+      <td>B12</td>
+      <td>P12</td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Florida</td>
+      <td>Virginia</td>
+      <td>4</td>
+      <td>5</td>
+      <td>65</td>
+      <td>39</td>
+      <td>SEC</td>
+      <td>ACC</td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Kansas</td>
+      <td>Michigan St</td>
+      <td>1</td>
+      <td>9</td>
+      <td>90</td>
+      <td>70</td>
+      <td>B12</td>
+      <td>B10</td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Louisville</td>
+      <td>Michigan</td>
+      <td>2</td>
+      <td>7</td>
+      <td>69</td>
+      <td>73</td>
+      <td>ACC</td>
+      <td>B10</td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Oregon</td>
+      <td>Rhode Island</td>
+      <td>3</td>
+      <td>11</td>
+      <td>75</td>
+      <td>72</td>
+      <td>P12</td>
+      <td>A10</td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Purdue</td>
+      <td>Iowa St</td>
+      <td>4</td>
+      <td>5</td>
+      <td>80</td>
+      <td>76</td>
+      <td>B10</td>
+      <td>B12</td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>4</td>
+      <td>South</td>
+      <td>North Carolina</td>
+      <td>Arkansas</td>
+      <td>1</td>
+      <td>8</td>
+      <td>72</td>
+      <td>65</td>
+      <td>ACC</td>
+      <td>SEC</td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>4</td>
+      <td>South</td>
+      <td>UCLA</td>
+      <td>Cincinnati</td>
+      <td>3</td>
+      <td>6</td>
+      <td>79</td>
+      <td>67</td>
+      <td>P12</td>
+      <td>Amer</td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>4</td>
+      <td>South</td>
+      <td>Butler</td>
+      <td>Middle Tennessee St</td>
+      <td>4</td>
+      <td>12</td>
+      <td>74</td>
+      <td>65</td>
+      <td>BE</td>
+      <td>CUSA</td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Gonzaga</td>
+      <td>Northwestern</td>
+      <td>1</td>
+      <td>8</td>
+      <td>79</td>
+      <td>73</td>
+      <td>WCC</td>
+      <td>B10</td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Arizona</td>
+      <td>St Marys</td>
+      <td>2</td>
+      <td>7</td>
+      <td>69</td>
+      <td>60</td>
+      <td>P12</td>
+      <td>WCC</td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Florida St</td>
+      <td>Xavier</td>
+      <td>3</td>
+      <td>11</td>
+      <td>66</td>
+      <td>91</td>
+      <td>ACC</td>
+      <td>BE</td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td>2017</td>
+      <td>2</td>
+      <td>2</td>
+      <td>West</td>
+      <td>West Virginia</td>
+      <td>Notre Dame</td>
+      <td>4</td>
+      <td>5</td>
+      <td>83</td>
+      <td>71</td>
+      <td>B12</td>
+      <td>ACC</td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td>2017</td>
+      <td>3</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Wisconsin</td>
+      <td>Florida</td>
+      <td>8</td>
+      <td>4</td>
+      <td>83</td>
+      <td>84</td>
+      <td>B10</td>
+      <td>SEC</td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td>2017</td>
+      <td>3</td>
+      <td>1</td>
+      <td>East</td>
+      <td>South Carolina</td>
+      <td>Baylor</td>
+      <td>7</td>
+      <td>3</td>
+      <td>70</td>
+      <td>50</td>
+      <td>SEC</td>
+      <td>B12</td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td>2017</td>
+      <td>3</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Kansas</td>
+      <td>Purdue</td>
+      <td>1</td>
+      <td>4</td>
+      <td>98</td>
+      <td>66</td>
+      <td>B12</td>
+      <td>B10</td>
+    </tr>
+    <tr>
+      <th>166</th>
+      <td>2017</td>
+      <td>3</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Michigan</td>
+      <td>Oregon</td>
+      <td>7</td>
+      <td>3</td>
+      <td>68</td>
+      <td>69</td>
+      <td>B10</td>
+      <td>P12</td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td>2017</td>
+      <td>3</td>
+      <td>4</td>
+      <td>South</td>
+      <td>North Carolina</td>
+      <td>Butler</td>
+      <td>1</td>
+      <td>4</td>
+      <td>92</td>
+      <td>80</td>
+      <td>ACC</td>
+      <td>BE</td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td>2017</td>
+      <td>3</td>
+      <td>4</td>
+      <td>South</td>
+      <td>Kentucky</td>
+      <td>UCLA</td>
+      <td>2</td>
+      <td>3</td>
+      <td>86</td>
+      <td>75</td>
+      <td>SEC</td>
+      <td>P12</td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td>2017</td>
+      <td>3</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Gonzaga</td>
+      <td>West Virginia</td>
+      <td>1</td>
+      <td>4</td>
+      <td>61</td>
+      <td>58</td>
+      <td>WCC</td>
+      <td>B12</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>2017</td>
+      <td>3</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Arizona</td>
+      <td>Xavier</td>
+      <td>2</td>
+      <td>11</td>
+      <td>71</td>
+      <td>73</td>
+      <td>P12</td>
+      <td>BE</td>
+    </tr>
+    <tr>
+      <th>169</th>
+      <td>2017</td>
+      <td>4</td>
+      <td>1</td>
+      <td>East</td>
+      <td>Florida</td>
+      <td>South Carolina</td>
+      <td>4</td>
+      <td>7</td>
+      <td>70</td>
+      <td>77</td>
+      <td>SEC</td>
+      <td>SEC</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>2017</td>
+      <td>4</td>
+      <td>3</td>
+      <td>Midwest</td>
+      <td>Kansas</td>
+      <td>Oregon</td>
+      <td>1</td>
+      <td>3</td>
+      <td>60</td>
+      <td>74</td>
+      <td>B12</td>
+      <td>P12</td>
+    </tr>
+    <tr>
+      <th>172</th>
+      <td>2017</td>
+      <td>4</td>
+      <td>4</td>
+      <td>South</td>
+      <td>North Carolina</td>
+      <td>Kentucky</td>
+      <td>1</td>
+      <td>2</td>
+      <td>75</td>
+      <td>73</td>
+      <td>ACC</td>
+      <td>SEC</td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td>2017</td>
+      <td>4</td>
+      <td>2</td>
+      <td>West</td>
+      <td>Gonzaga</td>
+      <td>Xavier</td>
+      <td>1</td>
+      <td>11</td>
+      <td>83</td>
+      <td>59</td>
+      <td>WCC</td>
+      <td>BE</td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td>2017</td>
+      <td>5</td>
+      <td>1</td>
+      <td>Final Four</td>
+      <td>South Carolina</td>
+      <td>Gonzaga</td>
+      <td>7</td>
+      <td>1</td>
+      <td>73</td>
+      <td>77</td>
+      <td>SEC</td>
+      <td>WCC</td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td>2017</td>
+      <td>5</td>
+      <td>2</td>
+      <td>Final Four</td>
+      <td>Oregon</td>
+      <td>North Carolina</td>
+      <td>3</td>
+      <td>1</td>
+      <td>76</td>
+      <td>77</td>
+      <td>P12</td>
+      <td>ACC</td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td>2017</td>
+      <td>6</td>
+      <td>1</td>
+      <td>Championship</td>
+      <td>Gonzaga</td>
+      <td>North Carolina</td>
+      <td>1</td>
+      <td>1</td>
+      <td>65</td>
+      <td>71</td>
+      <td>WCC</td>
+      <td>ACC</td>
+    </tr>
+  </tbody>
+</table>
+		</div>
+	</div>
+	<div class="cardmx-auto container bg-dark mb-3" role="alert">
+		<div class="card-body py-3">
+			<p class="text-white">© Copyright Coding Bootcamp 2020</p>
+		</div>
+	</div>
+	<!-- Footer -->
+</body>
