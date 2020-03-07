@@ -50,4 +50,4 @@ Bonus #1: Using Jupyter Notebook, we performed analysis on the final dataset sta
 
 Bonus #2: Built website with bootstrap and drop down javascript menus to show analysis and final data
 
-Bonus #3: Added github.io to host website <a href="https://bigtoga.github.io/March-Madness-ETL/" target="__blank">https://bigtoga.github.io/March-Madness-ETL/</a>
+Bonus #3: Added github.io to host website <a href="https://bigtoga.github.io/March-Madness-ETL/" target="_blank">https://bigtoga.github.io/March-Madness-ETL/</a>
