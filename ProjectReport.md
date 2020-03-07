@@ -2,6 +2,7 @@
 
 ## Cash In On March Madness
 
+### Group 7
 ### Audelia Torres, Justin Boggs, Kirpatrick Dorsey, Scott Whigham
 
 ### Overview
@@ -16,30 +17,31 @@ For this project, we chose to focus on March Madness data. Betting on the March 
 * **L**oad: the final database, tables/collections, and why this was chosen.
 
 ### Extract
-Big_Dance_CSV.csv file contains historical data on March Madness tournaments.
+The Big_Dance_CSV.csv file contains historical data on March Madness tournaments.
 https://data.world/michaelaroy/ncaa-tournament-results/
 
-cbb19.csv contains regular season data, including conferences.
+All of the cbb.csv files contain regular season data per team, including conferences.
 https://www.kaggle.com/andrewsundberg/college-basketball-dataset
 
+First, using Jupyter notebook, we read of these files in and performed basic analysis on each to get an idea of what data each file contained.
 
 ### Transform
-#### Big_Dance_CSV
-Read in Big_Dance_CSV.csv
+The files required significant cleaning to prepare them for joining and analysis. 
 
-Filter Big_Dance_CSV on "Year" >= 2015.
-Rename the columns:    "Seed":    "Home_Seed"
-                       "Score":   "Home_Score"
-                       "Team":    "Home_Team" 
-                       "Team.1":  "Away_Team" 
-                       "Score.1": "Away_Score"
-                       "Seed.1":   "Away_Seed" 
+### Jupyter Notebook
+1. Performed basic analysis of the tables using .info() and .describe()
+2. Renamed the columns for clarity and added column for conference names.
 
-Add the conference column.
-                       
-
-#### cbb19
-
-
+### Postgres
+1. Lines 7-11: Filtered data, dropping all data before the year 2015.
+2. Lines 13-24: Merge two columns into single column (Home_team and Away_team unioned to "Team")
+3. Lines 26-34:  For teams ending in St, Big_Dance.csv had these as St, while cbb.csv had these as St. Perform a replace to replace "." with " ".
+4. Lines 36-129:cbb.csv included apostrophes in the team names, Big.Dance did not. Replace " ' " with " ".
+5. Certain teams required renaming. For example, in the Big_Dance file, Wisconsin Green Bay was listed as only Green Bay. We had to search and rename 11 team names in the Big_Dance files.
+6. A small number of team have changed conferences in the past five years which was resulting in duplicated data. We considered these teams outliers and dropped them from the dataset.              
 
 ### Load
+Lines 130+: Using Postgres, load the final dataset into a virtual table.
+
+### Bonus
+Using Jupyter Notebook, we performed analysis on the final dataset starting at the heading "Read Final Data View"
