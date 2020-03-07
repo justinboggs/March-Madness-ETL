@@ -8,6 +8,8 @@
 ### Overview
 
 For this project, we chose to focus on March Madness data. Betting on the March Madness tournament continues to grow, and the more data you can obtain, the better. We pulled the last five years of March Madness tournament data as well as conference data for the NCAA. Combining these datasets would offer more flexibility in the analysis one could perform to predict tournament results. For example, in the tournament, teams are seeded based on the regular season and conference tournament results. A team performing well in a weak conference could be seeded higher, but not be as strong as a team playing in a strong conference. Knowing what conference each team is in will allow for stronger predictive analysis of the tournament. 
+
+Note the 3 bonus items at the end
 ######
 
 * **E**xtract: your original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc).
