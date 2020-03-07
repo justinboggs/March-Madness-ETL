@@ -43,5 +43,9 @@ The files required significant cleaning to prepare them for joining and analysis
 ### Load
 Lines 130+: Using Postgres, load the final dataset into a virtual table.
 
-### Bonus
-Using Jupyter Notebook, we performed analysis on the final dataset starting at the heading "Read Final Data View"
+# Bonus
+Bonus #1: Using Jupyter Notebook, we performed analysis on the final dataset starting at the heading "Read Final Data View"
+
+Bonus #2: Built website with bootstrap and drop down javascript menus to show analysis and final data
+
+Bonus #3: Added github.io to host website <a href="https://bigtoga.github.io/March-Madness-ETL/" target="_new">https://bigtoga.github.io/March-Madness-ETL/</a>
