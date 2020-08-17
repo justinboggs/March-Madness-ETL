@@ -10,7 +10,7 @@ Using data from the last five years of NCAA Basketball Tournament results, we wi
 ## Research Questions to Answer
 Out of scope for this project 
 
-![](output_data/seed_wins/png)
+![](output_data/seed_wins.png)
 
 ## Datasets to Be Used
 1. Kaggle - for conference data: https://www.kaggle.com/andrewsundberg/college-basketball-dataset
