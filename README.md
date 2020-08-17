@@ -2,7 +2,7 @@
 
 ## Team Members: Scott, Audelia, Kirkpatrick, Justin
 
-[alt text](output_data/sshot.png)
+![alt text](output_data/sshot.png)
 
 ## Project Description/Outline: 
 Using data from the last five years of NCAA Basketball Tournament results, we will combine multiple datasets to build a database of 2015-2019 results including seed, conference, and regional data. With this database, we would be able for predictive analysis to determine the chance of success for a team based on their conference and tournament seeding. 
